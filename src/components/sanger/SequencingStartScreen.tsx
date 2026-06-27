@@ -64,7 +64,7 @@ export function SequencingStartScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Início da reação"
-          subtitle="Acompanhe um único fragmento sendo montado: a fita molde é exposta, o primer pareia por complementaridade, a DNA polimerase ancora no 3'-OH e a síntese começa — até que um ddNTP fluorescente interrompe a cadeia."
+          subtitle="Acompanhe a montagem de um único fragmento. A fita molde fica exposta, o primer encontra a região complementar, a DNA polimerase ancora no 3'-OH e a síntese segue até um ddNTP fluorescente ser incorporado e interromper a cadeia."
         />
 
         <Panel className="mb-4">

@@ -35,7 +35,7 @@ export function InterpretationScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Interpretação do caso clínico"
-          subtitle="Considere o histórico do paciente, o objetivo da análise, a sequência obtida e o eletroferograma. Escolha a hipótese mais provável."
+          subtitle="Olhe para o histórico do paciente, o objetivo da análise, a sequência obtida e o eletroferograma antes de escolher a hipótese mais provável."
         />
 
         <div className="grid gap-4 md:grid-cols-2">
@@ -75,9 +75,9 @@ export function InterpretationScreen() {
         <Panel className="mt-4 border-primary/30">
           <div className="text-xs uppercase tracking-[0.2em] text-primary">Raciocínio molecular</div>
           <p className="mt-2 text-sm text-muted-foreground">
-            O sequenciamento de Sanger permite identificar a sequência de
-            nucleotídeos na região analisada. Compare a sequência obtida com a
-            variante investigada e escolha a interpretação mais compatível.
+            O Sanger mostra a sequência de nucleotídeos na região analisada.
+            Compare o que o eletroferograma forneceu com a variante
+            investigada e escolha a interpretação que melhor explica o achado.
           </p>
         </Panel>
 

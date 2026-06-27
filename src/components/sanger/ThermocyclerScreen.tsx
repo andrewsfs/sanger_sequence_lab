@@ -58,7 +58,7 @@ export function ThermocyclerScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Programação do termociclador (Cycle Sequencing)"
-          subtitle="Esta etapa é o Cycle Sequencing de Sanger — não uma PCR convencional. Atribua a temperatura correta a cada etapa do ciclo térmico."
+          subtitle="Aqui a programação é a do Cycle Sequencing de Sanger, que tem temperaturas próprias e não deve ser confundido com uma PCR convencional. Atribua a temperatura correta a cada etapa do ciclo."
         />
 
         <div className="grid gap-4 lg:grid-cols-[1.4fr_1fr]">

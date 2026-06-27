@@ -49,7 +49,7 @@ export function SeparationScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Eletroforese capilar"
-          subtitle="Os fragmentos de DNA fluorescentes migram pelo capilar: os menores chegam primeiro ao detector e os maiores depois, formando o eletroferograma."
+          subtitle="Os fragmentos fluorescentes percorrem o capilar separados por tamanho. Os menores chegam primeiro ao detector e os maiores depois, e é essa ordem que forma o eletroferograma."
         />
 
         <Panel className="overflow-hidden">

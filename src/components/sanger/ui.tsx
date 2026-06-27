@@ -126,13 +126,22 @@ export function useTypewriter(items: string[], delayMs = 70) {
   return { i, max: items.length };
 }
 
+// Nota: o componente AboutDialog (Sobre o Projeto) permanece implementado
+// em src/components/sanger/AboutDialog.tsx, mas a entrada na navegação está
+// temporariamente oculta até definição junto à orientação acadêmica.
+
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative flex min-h-screen flex-col overflow-hidden">
       <div className="lab-grid pointer-events-none absolute inset-0 opacity-40" />
-      <div className="relative mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
+      <div className="relative mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-12">
         <AnimatePresence mode="wait">{children}</AnimatePresence>
       </div>
+      <footer className="relative z-10 border-t border-[var(--color-border)]/60 px-4 py-3 text-center">
+        <p className="mx-auto max-w-3xl text-[11px] text-muted-foreground">
+          Representação didática simplificada para fins educacionais.
+        </p>
+      </footer>
     </div>
   );
 }

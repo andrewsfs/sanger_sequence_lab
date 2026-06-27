@@ -80,7 +80,7 @@ export function PurificationScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Purificação da reação de sequenciamento"
-          subtitle="Antes da eletroforese capilar, mantenha apenas os fragmentos de DNA fluorescentes. Remova o DNA molde, primers livres, DNA polimerase, dNTPs/ddNTPs livres e sais do tampão."
+          subtitle="Antes da eletroforese capilar a amostra precisa ficar com apenas os fragmentos de DNA fluorescentes. Decida o que mantém e o que descarta entre DNA molde, primers livres, polimerase, dNTPs e ddNTPs livres e sais do tampão."
         />
 
         <div className="grid gap-4 lg:grid-cols-[1fr_1.1fr]">

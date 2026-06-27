@@ -16,11 +16,6 @@ dist-ssr
 .nitro
 *.local
 
-.lovable/
-lovable.config.*
-lovable.json
-.lovable-cache/
-
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

@@ -26,11 +26,18 @@ export function IntroScreen() {
               Aprenda <span className="text-glow text-primary">Sequenciamento de Sanger</span> passo a passo.
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground">
-              Você vai executar a técnica virtualmente: montar a reação,
-              programar o termociclador (Cycle Sequencing), acompanhar a
-              síntese da nova fita com incorporação de ddNTPs, purificar a
-              amostra, separar os fragmentos por eletroforese capilar, ler o
-              eletroferograma e interpretar um caso clínico.
+              Aqui você executa a técnica como faria em uma bancada de
+              biologia molecular. Começa montando a reação, programa o
+              termociclador para o Cycle Sequencing, acompanha a síntese da
+              nova fita com incorporação dos ddNTPs fluorescentes, purifica a
+              amostra e segue até a eletroforese capilar, a leitura do
+              eletroferograma e a interpretação de um caso clínico.
+            </p>
+            <p className="mt-3 max-w-xl text-xs leading-relaxed text-muted-foreground/80">
+              Este simulador tem finalidade exclusivamente educacional. As
+              etapas usam simplificações visuais e conceituais para que o
+              aluno compreenda os princípios do método, sem reproduzir toda a
+              complexidade do procedimento real.
             </p>
             <div className="mt-8 flex items-center gap-3">
               <Button size="lg" onClick={next} className="px-7 text-base glow-primary">

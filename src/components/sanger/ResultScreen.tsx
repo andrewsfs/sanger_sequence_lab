@@ -49,7 +49,7 @@ export function ResultScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Resultado final"
-          subtitle="Resumo da análise, desempenho e conceitos consolidados."
+          subtitle="Um resumo do que foi obtido na análise, com o desempenho do experimento e os principais conceitos revisitados."
         />
 
         <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">

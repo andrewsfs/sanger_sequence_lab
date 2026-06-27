@@ -40,7 +40,7 @@ export function ReactionScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Preparação da reação"
-          subtitle="Monte a mistura selecionando apenas os componentes que fazem parte do Sequenciamento de Sanger. O orientador de bancada explica cada escolha; na próxima tela você revisa a reação antes de iniciar."
+          subtitle="Selecione os componentes que realmente fazem parte de uma reação de Sanger. O orientador de bancada comenta cada escolha conforme você adiciona ou remove itens, e na próxima tela você confere a mistura antes de iniciar."
         />
 
         <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">

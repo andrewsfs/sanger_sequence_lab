@@ -90,7 +90,7 @@ export function IncorporationScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Síntese e incorporação dos ddNTPs"
-          subtitle="A síntese ocorre em milhões de fragmentos em paralelo. Em cada um, o ddNTP é incorporado em uma posição diferente — gerando uma população completa de fragmentos de DNA de todos os tamanhos possíveis."
+          subtitle="A síntese acontece em milhões de fragmentos ao mesmo tempo. Em cada cópia, o ddNTP é incorporado em uma posição diferente, e é isso que gera uma população com fragmentos de praticamente todos os tamanhos possíveis."
         />
 
         <Panel className="mb-4">

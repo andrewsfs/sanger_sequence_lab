@@ -17,11 +17,11 @@ export function ObjectiveScreen() {
         <Panel>
           <div className="text-xs uppercase tracking-[0.2em] text-primary">O que você vai aprender</div>
           <p className="mt-2 text-sm text-foreground">
-            O Sequenciamento de Sanger é um método clássico para determinar a
-            ordem dos nucleotídeos (A, T, C, G) de um fragmento de DNA. Você
-            vai executar a técnica do início ao fim — da preparação da reação
-            até a leitura do eletroferograma — e, ao final, aplicar o que
-            aprendeu em um caso clínico.
+            O Sequenciamento de Sanger é o método clássico para descobrir a
+            ordem dos nucleotídeos (A, T, C, G) em um fragmento de DNA. Nesta
+            atividade você acompanha a técnica do começo ao fim, desde a
+            montagem da reação até a leitura do eletroferograma, e aplica o
+            que aprendeu em um caso clínico ao final.
           </p>
         </Panel>
 

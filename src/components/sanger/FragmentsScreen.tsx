@@ -15,7 +15,7 @@ export function FragmentsScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="População de fragmentos de DNA"
-          subtitle="Cada incorporação de ddNTP em uma posição diferente gera um fragmento de DNA de tamanho único. Todos partem do mesmo primer; a base terminal é sempre fluorescente."
+          subtitle="Cada ddNTP incorporado em uma posição diferente origina um fragmento de tamanho único. Todos eles partem do mesmo primer e terminam em uma base fluorescente."
         />
 
         <Panel>

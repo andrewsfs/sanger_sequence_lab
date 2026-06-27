@@ -76,7 +76,7 @@ export function ElectroScreen() {
           step={state.stepIndex + 1}
           total={total}
           title="Formação do eletroferograma"
-          subtitle="Os picos surgem conforme os fragmentos chegam ao detector. A sequência lida depende da cor do ddNTP fluorescente terminal de cada fragmento."
+          subtitle="Cada pico aparece quando um fragmento chega ao detector. A cor do pico corresponde ao ddNTP fluorescente terminal daquele fragmento, e é a sequência desses picos que vai compor a leitura."
         />
 
         <Panel>
