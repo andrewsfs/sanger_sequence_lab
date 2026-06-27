@@ -1,0 +1,150 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-base-a: var(--base-a);
+  --color-base-t: var(--base-t);
+  --color-base-c: var(--base-c);
+  --color-base-g: var(--base-g);
+  --color-panel: var(--panel);
+  --color-panel-foreground: var(--panel-foreground);
+  --color-glow: var(--glow);
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.875rem;
+  /* Futuristic biomedical lab — deep teal/cyan on near-black */
+  --background: oklch(0.16 0.025 220);
+  --foreground: oklch(0.96 0.01 220);
+  --panel: oklch(0.21 0.03 220);
+  --panel-foreground: oklch(0.96 0.01 220);
+  --card: oklch(0.22 0.03 220);
+  --card-foreground: oklch(0.96 0.01 220);
+  --popover: oklch(0.20 0.03 220);
+  --popover-foreground: oklch(0.96 0.01 220);
+  --primary: oklch(0.82 0.16 195);          /* cyan */
+  --primary-foreground: oklch(0.18 0.03 220);
+  --secondary: oklch(0.28 0.04 220);
+  --secondary-foreground: oklch(0.96 0.01 220);
+  --muted: oklch(0.26 0.025 220);
+  --muted-foreground: oklch(0.72 0.02 220);
+  --accent: oklch(0.78 0.18 170);           /* aqua-green */
+  --accent-foreground: oklch(0.16 0.03 220);
+  --destructive: oklch(0.66 0.21 28);
+  --destructive-foreground: oklch(0.98 0 0);
+  --success: oklch(0.78 0.17 155);
+  --success-foreground: oklch(0.16 0.03 220);
+  --border: oklch(0.32 0.03 220);
+  --input: oklch(0.30 0.03 220);
+  --ring: oklch(0.82 0.16 195);
+  --glow: oklch(0.82 0.16 195 / 35%);
+
+  /* DNA base colors — clear, distinct */
+  --base-a: oklch(0.72 0.20 145);  /* green  - Adenine */
+  --base-t: oklch(0.72 0.22 25);   /* red    - Thymine */
+  --base-c: oklch(0.74 0.17 250);  /* blue   - Cytosine */
+  --base-g: oklch(0.82 0.16 85);   /* amber  - Guanine */
+}
+
+.dark { color-scheme: dark; }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body { height: 100%; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, oklch(0.30 0.08 195 / 0.35), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, oklch(0.30 0.08 170 / 0.25), transparent 60%),
+      linear-gradient(180deg, oklch(0.14 0.025 220) 0%, oklch(0.16 0.025 220) 100%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
+}
+
+@utility glass-panel {
+  background: linear-gradient(180deg, oklch(0.24 0.03 220 / 0.85), oklch(0.20 0.03 220 / 0.85));
+  border: 1px solid oklch(0.42 0.04 220 / 0.5);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 1px 0 oklch(1 0 0 / 0.04) inset,
+    0 20px 60px -20px oklch(0 0 0 / 0.6),
+    0 0 0 1px oklch(0.82 0.16 195 / 0.05);
+}
+
+@utility lab-grid {
+  background-image:
+    linear-gradient(oklch(0.82 0.16 195 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.82 0.16 195 / 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@utility glow-primary {
+  box-shadow: 0 0 0 1px oklch(0.82 0.16 195 / 0.4), 0 0 40px var(--glow);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 24px oklch(0.82 0.16 195 / 0.5);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes scan-line {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-pulse-soft { animation: pulse-soft 2.4s ease-in-out infinite; }
+.animate-float-y { animation: float-y 3s ease-in-out infinite; }
+.animate-scan-line { animation: scan-line 2.4s linear infinite; }
+
+a[href*="lovable.dev"],
+iframe[src*="lovable.dev"],
+div[style*="Edit with Lovable"],
+.lovable-badge {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+}
